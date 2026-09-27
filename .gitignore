@@ -1,0 +1,7 @@
+##modules
+node_modules
+##Production Build
+dist
+##Environent Files
+.env
+.env.example
