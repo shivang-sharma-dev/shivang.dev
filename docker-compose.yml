@@ -1,0 +1,20 @@
+
+services:
+  react-app:
+    container_name: react-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8080:80'
+    volumes:
+      - my-frontend:/app
+    networks:
+      - my-net
+    restart: unless-stopped
+
+volumes:
+  my-frontend:
+
+networks:
+  my-net:
